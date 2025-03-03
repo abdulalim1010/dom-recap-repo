@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="">
+  <header class="">
+    <div class="navbar p-44 shadow-sm">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+      </div>
+      <div class="flex-none">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span class="badge badge-sm indicator-item">8</span>
+            </div>
+          </div>
+          <div tabindex="0" class="card card-compact dropdown-content z-1 mt-3 w-52 shadow">
+            <div class="card-body">
+              <span class="text-lg font-bold">8 Items</span>
+              <span class="text-info">Subtotal: $999</span>
+              <div class="card-actions">
+                <button class="btn btn-primary btn-block">View cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+            <div class="w-10 rounded-full">
+              <img src="./82f52063-fa12-4659-ace5-fee451d927da.jfif" alt="">
+            </div>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li>
+              <a class="justify-between">
+                Profile
+                <span class="badge">New</span>
+              </a>
+            </li>
+            <li><a>Settings</a></li>
+            <li><a>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="text-center">
+    <!-- Apply id="color-change" directly to the button -->
+    <button id="color-change" class="bg-orange-500 text-4xl mb-5 rounded-3xl p-5">Click me</button>
+  </div>
+
+  <section>
+    <h2 class="text-2xl">My name is MD Abdul Alim</h2>
+    <p class="text-blue-600">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in magni suscipit
+      laboriosam esse ab consequuntur, iusto tempore recusandae vel excepturi quo eum quasi sapiente, labore harum
+      reprehenderit animi nesciunt? Dolorem quasi corrupti voluptate laborum! Laudantium consequuntur quasi eius magni
+      quidem. Beatae dolore sint, porro inventore eum obcaecati voluptatem exercitationem.
+    </p>
+  </section>
+
+  <script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      // Function to generate random RGB color
+      function getRandomColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+
+      // Listen for click on the button with id 'color-change'
+      document.getElementById('color-change').addEventListener('click', function () {
+        console.log('Button clicked!'); // Debugging line to check if the button is clicked
+        document.body.style.backgroundColor = getRandomColor();
+      });
+    });
+  </script>
+</body>
+
+</html>
