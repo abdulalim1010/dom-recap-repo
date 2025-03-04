@@ -1,11 +1,13 @@
 
 const rejia = {
-  name: "rejia",
+  name: "rejias",
   class: 10,
   section: "science",
   age:27
 }
-const { name,  section, age } = rejia;
-console.log(name);
-console.log(age)
-
+console.log(rejia.name)
+for (let key in rejia) {
+ 
+}
+console.log(`key: $ {key} value:$ {rejia[value
+]}`)
