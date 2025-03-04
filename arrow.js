@@ -18,3 +18,7 @@ const sum3 = (num1, num2) => {
  return  num1 + num2;
 } 
 console.log(sum3(6, 6));
+const sum4 = () => console.log("hello mahi")
+sum4()
+const reso = a => a * a;
+console.log(reso(5));
